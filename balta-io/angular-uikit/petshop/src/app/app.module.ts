@@ -10,6 +10,8 @@ import { ResetPasswordPageComponent } from './pages/account/reset-password-page/
 import { SignupPageComponent } from './pages/account/signup-page/signup-page.component';
 import { CartPageComponent } from './pages/store/cart-page/cart-page.component';
 import { ProductsPageComponent } from './pages/store/products-page/products-page.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { ProductsPageComponent } from './pages/store/products-page/products-page
     SignupPageComponent,
     PetsPageComponent,
     ProductsPageComponent,
-    CartPageComponent
+    CartPageComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
